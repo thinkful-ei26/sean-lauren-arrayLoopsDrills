@@ -92,3 +92,12 @@ const move = turtle.filter(function moveBackwards(arr) {
 });
 
 console.log(sum);
+
+let input = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest';
+console.log(input.split(' ').reduce((acc, cur) => {
+  if (cur.length === 3) {
+    return acc += ' ';
+  } else {
+    return acc += cur[cur.length - 1].toUpperCase();
+  }
+}, ''));
