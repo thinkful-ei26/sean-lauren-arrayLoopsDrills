@@ -26,3 +26,13 @@ function min(numbers) {
 
 console.log(max([1,2,3,2]));
 console.log(min([2,3,5,4]));
+
+function average(numbers) {
+  let sum = 0;
+  numbers.forEach(function(value) {
+    sum += value;
+  }); 
+  return sum / numbers.length;
+}
+
+console.log(average([2,2,3,4]));
