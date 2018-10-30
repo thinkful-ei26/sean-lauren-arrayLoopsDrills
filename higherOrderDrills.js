@@ -63,3 +63,22 @@ rocksWarning('Main St and Pacific Ave');
 rocksWarning('Centinela Ave and Olympic Blvd');
 tornadoWarning('Main St');
 lightningStorm('1st Ave');
+
+const turtle = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
+
+const move = turtle.filter(function moveBackwords(arr) {
+  if (arr[0] < 0 || arr[1] < 0) {
+  return false;
+  }
+  return true;
+});
+
+const newTurtle = move.map(function addMovement(arr1) {
+  return arr1[0] + arr1[1];
+});
+let sum = 0;
+
+newTurtle.forEach(function(value) {
+  return sum += value;
+}); 
+
