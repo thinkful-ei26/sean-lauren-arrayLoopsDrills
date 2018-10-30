@@ -1,0 +1,8 @@
+What is scope?
+  Scope is where a variable can be accessed.  If a variable is declared within a function, it has local scope, or it can only be used inside that function.  If it is declared outside any function, it has global scope and can be used anywhere.
+Why are global variables avoided?
+  They can make programs behave unpredictably and make collaborating more difficult.
+Explain JavaScript's strict mode.
+  Strict mode can be enabled at the beginning of a file to use it in the entire file or at the beginning of a function to use it only in the function.  It throws an error when a variable is declared without using let or const.
+What are side effects and what is a pure function?
+  Side effects are when a function changes something outside of it, these are usually unintended.  A function is pure if it is deterministic and has no side effects.
